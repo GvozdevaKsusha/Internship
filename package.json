@@ -6,10 +6,12 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@cap-js/hana": "^1",
     "@sap/cds": "^8",
-    "express": "^4",
     "@sap/xssec": "^4",
-    "@cap-js/hana": "^1"
+    "bcrypt": "^5.1.1",
+    "express": "^4",
+    "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
     "@cap-js/cds-types": "^0.8.0",
@@ -20,6 +22,11 @@
     "start": "cds-serve"
   },
   "cds": {
+    "requires": {
+      "auth": {
+        "kind": "xsuaa"
+      }
+    },
     "sql": {
       "native_hana_associations": false
     }

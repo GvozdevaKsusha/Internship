@@ -1,6 +1,27 @@
 {
-  "scopes": [],
-  "attributes": [],
-  "role-templates": [],
-  "authorities-inheritance": false
+  "xsappname": "plane-parts-app",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.user",
+      "description": "Basic user access"
+    },
+    {
+      "name": "$XSAPPNAME.admin",
+      "description": "Administrator access"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "UserRole",
+      "description": "Role for basic users",
+      "scope-references": ["$XSAPPNAME.user"]
+    },
+    {
+      "name": "AdminRole",
+      "description": "Role for administrators",
+      "scope-references": ["$XSAPPNAME.admin"]
+    }
+  ]
 }
+
