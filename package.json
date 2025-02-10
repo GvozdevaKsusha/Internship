@@ -19,16 +19,20 @@
     "@sap/cds-dk": "^8"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-sales_front": "cds watch --open sales_front/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {
       "auth": {
-        "kind": "xsuaa"
+        "kind": "mocked"
       }
     },
     "sql": {
       "native_hana_associations": false
     }
-  }
+  },
+  "sapux": [
+    "app/sales_front"
+  ]
 }
