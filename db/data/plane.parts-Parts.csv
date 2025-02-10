@@ -1,0 +1,11 @@
+ID,name,description,price,currency_code,stock
+550e8400-e29b-41d4-a716-446655440000,Turbofan Engine,High-bypass turbofan engine for commercial aircraft,12500000.00,USD,5
+550e8400-e29b-41d4-a716-446655440001,Avionics Control Unit,Integrated avionics system for flight control,750000.00,USD,12
+550e8400-e29b-41d4-a716-446655440002,Hydraulic Pump,High-pressure hydraulic pump for landing gear,15000.50,USD,20
+550e8400-e29b-41d4-a716-446655440003,Flight Control Surface,Aileron control surface for jet aircraft,50000.00,USD,8
+550e8400-e29b-41d4-a716-446655440004,Landing Gear Strut,Shock-absorbing landing gear strut,120000.00,USD,10
+550e8400-e29b-41d4-a716-446655440005,Oxygen Generation System,Aircraft onboard oxygen generation system,30000.00,USD,15
+550e8400-e29b-41d4-a716-446655440006,Fuel Pump,High-capacity fuel pump for long-range aircraft,25000.00,USD,25
+550e8400-e29b-41d4-a716-446655440007,Brake Assembly,Carbon-composite aircraft braking system,80000.00,USD,7
+550e8400-e29b-41d4-a716-446655440008,Thrust Reverser,Engine thrust reverser for deceleration on landing,500000.00,USD,6
+550e8400-e29b-41d4-a716-446655440009,Winglet,Aerodynamic wingtip device for fuel efficiency,60000.00,USD,9

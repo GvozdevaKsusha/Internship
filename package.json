@@ -20,9 +20,6 @@
     "start": "cds-serve"
   },
   "cds": {
-    "requires": {
-      "auth": "xsuaa"
-    },
     "sql": {
       "native_hana_associations": false
     }
