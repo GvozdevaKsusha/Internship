@@ -16,16 +16,31 @@
   "devDependencies": {
     "@cap-js/cds-types": "^0.8.0",
     "@cap-js/sqlite": "^1",
-    "@sap/cds-dk": "^8"
+    "@sap/cds-dk": "^8",
+    "@sap/ux-ui5-tooling": "^1.16.3",
+    "rimraf": "^5.0.5",
+    "mbt": "^1.2.29"
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-sales_front": "cds watch --open sales_front/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-sales_front": "cds watch --open sales_front/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-order_list": "cds watch --open order_list/webapp/index.html?sap-ui-xx-viewCache=false",
+    "undeploy": "cf undeploy sales --delete-services --delete-service-keys --delete-service-brokers",
+    "build": "rimraf resources mta_archives && mbt build --mtar archive",
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
   },
   "cds": {
     "requires": {
       "auth": {
-        "kind": "mocked"
+        "kind": "basic",
+        "users": {
+          "User1": {
+            "password": "1111",
+            "roles": [
+              "user"
+            ]
+          }
+        }
       }
     },
     "sql": {
@@ -33,6 +48,7 @@
     }
   },
   "sapux": [
-    "app/sales_front"
+    "app/sales_front",
+    "app/order_list"
   ]
 }

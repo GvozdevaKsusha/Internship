@@ -1,0 +1,20 @@
+GET http://localhost:4004/odata/v4/order/Customers
+
+### ------------------------------------------------------------------------
+# Create Order
+
+POST http://localhost:4004/odata/v4/order/createOrder
+Content-Type: application/json
+
+{
+  "customerID": "1eb1bd57-376f-4c05-a511-29c8b388fadb",
+  "items": [
+    { "part": "550e8400-e29b-41d4-a716-446655440002", "quantity": 2 },
+    { "part": "550e8400-e29b-41d4-a716-446655440003", "quantity": 5 }
+  ]
+}
+
+### ------------------------------------------------------------------------
+# Create Order
+
+GET http://localhost:4004/odata/v4/order/OrderItems

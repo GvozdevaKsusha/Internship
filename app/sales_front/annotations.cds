@@ -5,27 +5,27 @@ annotate service.Parts with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Label : 'name',
+                Label : 'Offical name mechanical plane part',
                 Value : name,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'description',
+                Label : 'Description',
                 Value : description,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'price',
+                Label : 'Price',
                 Value : price,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'currency_code',
+                Label : 'Currency',
                 Value : currency_code,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'stock',
+                Label : 'Stock',
                 Value : stock,
             },
         ],
@@ -41,27 +41,27 @@ annotate service.Parts with @(
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Label : 'name',
+            Label : 'Offical name mechanical plane part',
             Value : name,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'description',
+            Label : 'Description',
             Value : description,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'price',
+            Label : 'Price',
             Value : price,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'currency_code',
+            Label : 'Currency',
             Value : currency_code,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'stock',
+            Label : 'Stock',
             Value : stock,
         },
     ],

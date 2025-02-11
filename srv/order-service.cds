@@ -10,10 +10,10 @@ service OrderService {
     
     entity OrderItems as projection on orders.OrderItems;
     
-    action placeOrder(customerID: UUID, items: OrderItemInput) returns Orders;
+    action createOrder(customerID: UUID, items: Array of OrderItemInput) returns Orders;
 }
 
 type OrderItemInput {
-    partID: UUID;
-    quantity: Integer;
+    part  : UUID;
+    quantity : Integer;
 }
